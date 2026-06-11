@@ -1,0 +1,31 @@
+{
+  "name": "ascii-tower-defense",
+  "version": "1.0.0",
+  "description": "An ASCII tower defense game played in the terminal",
+  "main": "dist/index.js",
+  "bin": {
+    "ascii-td": "dist/index.js"
+  },
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "oxlint src/ tests/",
+    "format": "oxc_format src/ tests/",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["terminal", "game", "tower-defense", "ascii"],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/blessed": "0.1.25",
+    "oxlint": "0.16.6",
+    "tsx": "4.19.4",
+    "typescript": "5.8.3",
+    "vitest": "3.1.4"
+  },
+  "dependencies": {
+    "blessed": "0.1.81"
+  }
+}
