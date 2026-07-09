@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { createEnemy, moveEnemies, processEscapedEnemies } from '../src/enemies/logic.js';
-import type { GameState, Enemy } from '../src/core/types.js';
+import type { Enemy } from '../src/core/types.js';
 import { createInitialState } from '../src/core/initializer.js';
 
 describe('enemies', () => {
